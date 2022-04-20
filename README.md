@@ -19,6 +19,8 @@ middleware:
 
 ## 初始化/绑定中间件
 
+包路径: github.com/tekintian/gf-http-visitor-rate-limiter/middleware
+
 ~~~go
 package main
 
