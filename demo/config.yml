@@ -1,0 +1,12 @@
+
+# 中间件配置
+middleware:
+  # 访客访问频率限制中间件, 作用, 限制单用户访问页面的频率
+  Visitor:
+    rateMode: all # 限制模式, ip + xxx , 可选 all url , ua 不配置 默认 ip+ua+url
+    limit: 1 # 每X秒生成一个访问令牌
+    burst: 3 # 令牌桶容量, 即用户 limit秒内可访问的次数
+    cleanInterval: 5 # 非活动用户删除间隔 单位: 分钟
+    blockMsg: "您当前的访问频率太快了! 请放慢您的脚步 :)"
+
+
